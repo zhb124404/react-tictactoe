@@ -158,7 +158,8 @@ class Game extends React.Component {
   getHistoryElement (history) {
     // Array.prototype.map(squares,index) 使用展开运算符+解构赋值避免引入多余参数(squares)
     return history.map((...[, index]) => {
-      const tip = index === 0 ? 'Go to start' : 'Go to #' + index
+      let tip = index === 0 ? 'Go to start' : 'Go to #' + index
+      if (index === this.state.head) tip = (<strong>{tip}</strong>)
       return (
         <li key={'step' + index}>
           <button onClick={() => this.goTo(index)}>{tip}</button>
