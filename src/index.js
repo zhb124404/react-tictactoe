@@ -149,7 +149,8 @@ class Game extends React.Component {
   goTo (index) {
     this.setState({
       ...this.state,
-      head: index
+      head: index,
+      now: (index % 2 === 0) ? this.state.first : (this.state.first === 'X' ? 'O' : 'X')
     })
   }
 
