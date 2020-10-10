@@ -1,5 +1,12 @@
 # React 井字棋
 
+## 功能实现
+
+- [x] 井字棋轮流落子
+- [x] 判胜
+- [x] 重新开局&先手切换
+- [x] 落子记录&跳转
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
